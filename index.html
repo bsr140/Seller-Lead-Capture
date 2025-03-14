@@ -45,6 +45,26 @@
         #image2 {
             background-image: url('https://source.unsplash.com/600x400/?boston,realestate');
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -63,6 +83,12 @@
             <p>Have a property to sell or looking for investment opportunities? Reach out today.</p>
             <p><strong>Phone:</strong> 617-612-5302</p>
             <p><strong>Email:</strong> contact@wickedeasyoffers.com</p>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
         </div>
         <div class="panel" id="framingham-market">
             <h2>Framingham Market Spotlight</h2>
