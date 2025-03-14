@@ -13,21 +13,37 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            background-color: #f4f4f4;
         }
         .container {
             display: flex;
             justify-content: space-around;
             width: 100%;
+            margin-top: 20px;
         }
         .panel {
             width: 30%;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            background-color: #f8f8f8;
+            background-color: #fff;
         }
         h2 {
             color: #333;
+        }
+        .image-container {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        #image1 {
+            background-image: url('https://source.unsplash.com/600x400/?boston,house');
+        }
+        #image2 {
+            background-image: url('https://source.unsplash.com/600x400/?boston,realestate');
         }
     </style>
 </head>
@@ -35,10 +51,14 @@
     <h1>Wicked Easy Offers</h1>
     <div class="container">
         <div class="panel" id="about">
+            <div class="image-container" id="image1"></div>
             <h2>About Us</h2>
-            <p>We specialize in finding off-market real estate opportunities and connecting property owners with serious buyers. Our goal is to make selling and investing in real estate seamless and stress-free.</p>
+            <p>We specialize in finding off-market real estate opportunities and connecting property owners with serious buyers. Our team is dedicated to providing fast, fair, and hassle-free solutions for homeowners looking to sell, and investors searching for great deals.</p>
+            <p>With a deep understanding of the Boston real estate market, we help clients navigate sales, purchases, and investments with confidence. Whether you're looking to sell quickly or invest in multifamily properties, we’re here to make the process seamless.</p>
+            <p><strong>Looking to sell or invest? Contact us today to discuss your options!</strong></p>
         </div>
         <div class="panel" id="contact">
+            <div class="image-container" id="image2"></div>
             <h2>Contact Us</h2>
             <p>Have a property to sell or looking for investment opportunities? Reach out today.</p>
             <p><strong>Phone:</strong> 617-612-5302</p>
