@@ -3,100 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wicked Easy Offers - Real Estate Solutions</title>
+    <title>Wicked Easy Offers</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
             background-color: #f4f4f4;
+            text-align: center;
         }
         .container {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            margin-top: 20px;
+            width: 80%;
+            margin: 50px auto;
         }
-        .panel {
-            width: 30%;
-            padding: 20px;
+        .section {
+            background: white;
+            padding: 40px;
+            margin: 20px auto;
             border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-        }
-        h2 {
-            color: #333;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            height: 400px; /* Increased height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .image-container {
             width: 100%;
-            height: 200px;
+            height: 300px;
             background-size: cover;
             background-position: center;
             border-radius: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
-        #image1 {
-            background-image: url(https://raw.githubusercontent.com/bsr140/Seller-Lead-Capture/refs/heads/main/images/kara-eads-L7EwHkq1B2s-unsplash.jpg);
-        }
-        #image2 {
-            background-image: url(https://raw.githubusercontent.com/bsr140/Seller-Lead-Capture/refs/heads/main/images/ernie-journeys-r5WU0B6OUws-unsplash.jpg;
-        }
-        form {
+        .contact-form {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            gap: 10px;
         }
         input, textarea {
-            width: 90%;
-            padding: 8px;
-            margin: 5px 0;
+            width: 100%;
+            padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
         button {
-            padding: 10px 15px;
             background-color: #007BFF;
             color: white;
+            padding: 10px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
+        button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <h1>Wicked Easy Offers</h1>
     <div class="container">
-        <div class="panel" id="about">
-            <div class="image-container" id="image1"></div>
-            <h2>About Us</h2>
-            <p>We specialize in finding off-market real estate opportunities and connecting property owners with serious buyers. Our team is dedicated to providing fast, fair, and hassle-free solutions for homeowners looking to sell, and investors searching for great deals.</p>
-            <p>With a deep understanding of the Boston real estate market, we help clients navigate sales, purchases, and investments with confidence. Whether you're looking to sell quickly or invest in multifamily properties, we’re here to make the process seamless.</p>
-            <p><strong>Looking to sell or invest? Contact us today to discuss your options!</strong></p>
+        <div class="image-container" style="background-image: url('https://raw.githubusercontent.com/bsr140/Seller-Lead-Capture/refs/heads/main/images/ernie-journeys-r5WU0B6OUws-unsplash.jpg');"></div>
+        <div class="section">
+            <h2>About Wicked Easy Offers</h2>
+            <p>We specialize in helping property owners sell quickly and efficiently. Whether you own a distressed property or simply want a hassle-free transaction, we provide fair and competitive offers.</p>
+            <p>Contact us today to learn how we can help you!</p>
         </div>
-        <div class="panel" id="contact">
-            <div class="image-container" id="image2"></div>
+        <div class="image-container" style="background-image: url('https://raw.githubusercontent.com/bsr140/Seller-Lead-Capture/refs/heads/main/images/kara-eads-L7EwHkq1B2s-unsplash.jpg');"></div>
+        <div class="section">
+            <h2>Framingham Market Spotlight</h2>
+            <p>Stay informed with the latest real estate trends in Framingham. Our team tracks market data to provide you with insights on pricing, demand, and investment opportunities.</p>
+        </div>
+        <div class="image-container" style="background-image: url('https://raw.githubusercontent.com/bsr140/Seller-Lead-Capture/refs/heads/main/images/jennifer-r-sZ9F_XkGJfI-unsplash.jpg');"></div>
+        <div class="section">
             <h2>Contact Us</h2>
-            <p>Have a property to sell or looking for investment opportunities? Reach out today.</p>
-            <p><strong>Phone:</strong> 617-612-5302</p>
-            <p><strong>Email:</strong> contact@wickedeasyoffers.com</p>
-            <form action="https://formspree.io/f/your-form-id" method="POST">
+            <p>Have questions or want to get in touch? Fill out the form below, and we'll reach out!</p>
+            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="panel" id="framingham-market">
-            <h2>Framingham Market Spotlight</h2>
-            <p>Latest real estate stats for Framingham (Updated Monthly):</p>
-            <p><strong>Median Home Price:</strong> $615,000</p>
-            <p><strong>Average Days on Market:</strong> 38 Days</p>
-            <p><strong>Price per Sq Ft:</strong> $325</p>
-            <p>Source: <a href="https://www.redfin.com/news/data-center/" target="_blank">Redfin Data Center</a></p>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            <iframe src="https://forms.zohopublic.com/brandonwickedea1/form/LandingPage1/formperma/tpbXURKXj_YxED4hIl1xT5fUU-I2wH791PxLGEw-GA4" width="100%" height="600px" frameborder="0"></iframe>
+            <p>Or email us directly at <a href="mailto:brandon@wickedeasyoffers.com">brandon@wickedeasyoffers.com</a></p>
         </div>
     </div>
 </body>
