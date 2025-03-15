@@ -9,81 +9,54 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             background-color: #f4f4f4;
-            text-align: center;
         }
         .container {
-            width: 80%;
-            margin: 50px auto;
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            justify-content: space-between;
         }
-        .section {
+        .column {
+            flex: 1;
             background: white;
-            padding: 40px;
-            margin: 20px auto;
+            padding: 20px;
+            margin: 10px;
             border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            height: 400px; /* Increased height */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        .image-container {
+        .column img {
             width: 100%;
-            height: 300px;
-            background-size: cover;
-            background-position: center;
+            height: auto;
             border-radius: 10px;
-            margin-bottom: 20px;
         }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        input, textarea {
+        iframe {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px;
+            height: 400px;
             border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="image-container" style="background-image: url('https://raw.githubusercontent.com/bsr140/Seller-Lead-Capture/refs/heads/main/images/ernie-journeys-r5WU0B6OUws-unsplash.jpg');"></div>
-        <div class="section">
+        <div class="column">
             <h2>About Wicked Easy Offers</h2>
-            <p>We specialize in helping property owners sell quickly and efficiently. Whether you own a distressed property or simply want a hassle-free transaction, we provide fair and competitive offers.</p>
-            <p>Contact us today to learn how we can help you!</p>
+            <p>Wicked Easy Offers specializes in connecting property owners with real estate solutions. Whether you're looking to sell your multifamily property quickly or explore options, we're here to help. Contact us today to see how we can assist with your real estate goals.</p>
+            <img src="https://raw.githubusercontent.com/bsr140/Seller-Lead-Capture/refs/heads/main/images/ernie-journeys-r5WU0B6OUws-unsplash.jpg" alt="Boston Multifamily Housing">
         </div>
-        <div class="image-container" style="background-image: url('https://raw.githubusercontent.com/bsr140/Seller-Lead-Capture/refs/heads/main/images/kara-eads-L7EwHkq1B2s-unsplash.jpg');"></div>
-        <div class="section">
+        <div class="column">
             <h2>Framingham Market Spotlight</h2>
-            <p>Stay informed with the latest real estate trends in Framingham. Our team tracks market data to provide you with insights on pricing, demand, and investment opportunities.</p>
+            <p>Stay updated with the latest real estate trends in Framingham. We track market data to give you insights on property values, rental trends, and investment opportunities.</p>
+            <img src="https://raw.githubusercontent.com/bsr140/Seller-Lead-Capture/refs/heads/main/images/kara-eads-L7EwHkq1B2s-unsplash.jpg" alt="Framingham Housing Market">
         </div>
-        <div class="image-container" style="background-image: url('https://raw.githubusercontent.com/bsr140/Seller-Lead-Capture/refs/heads/main/images/jennifer-r-sZ9F_XkGJfI-unsplash.jpg');"></div>
-        <div class="section">
+        <div class="column">
             <h2>Contact Us</h2>
-            <p>Have questions or want to get in touch? Fill out the form below, and we'll reach out!</p>
-            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            <iframe src="https://forms.zohopublic.com/brandonwickedea1/form/LandingPage1/formperma/tpbXURKXj_YxED4hIl1xT5fUU-I2wH791PxLGEw-GA4" width="100%" height="600px" frameborder="0"></iframe>
-            <p>Or email us directly at <a href="mailto:brandon@wickedeasyoffers.com">brandon@wickedeasyoffers.com</a></p>
+            <iframe src="https://forms.zohopublic.com/brandonwickedea1/form/LandingPage1/formperma/tpbXURKXj_YxED4hIl1xT5fUU-I2wH791PxLGEw-GA4"></iframe>
         </div>
     </div>
 </body>
